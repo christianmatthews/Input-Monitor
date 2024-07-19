@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Input Monitor",
+  "version": "1.0",
+  "description": "Keep track of your web form inputs with Input Monitor, a privacy-focused extension that logs and categorizes the information you provide online. Whether it's autofill data or manual entries, Input Monitor helps you stay aware of the data you share across different websites.",
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}

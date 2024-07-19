@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Monitor</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Input Monitor</h1>
+    <div class="button-row">
+      <button id="clear-history">Clear History</button>
+      <button id="download-csv">Download CSV</button>
+    </div>
+    <div id="history-sections">
+      <div id="today-section" class="history-section">
+        <h2>Today</h2>
+        <table id="today-table"></table>
+      </div>
+      <div id="week-section" class="history-section">
+        <h2>This Week</h2>
+        <table id="week-table"></table>
+      </div>
+      <div id="last-week-section" class="history-section">
+        <h2>Last Week</h2>
+        <table id="last-week-table"></table>
+      </div>
+      <div id="earlier-section" class="history-section">
+        <h2>Earlier</h2>
+        <table id="earlier-table"></table>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
